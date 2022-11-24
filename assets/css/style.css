@@ -1,13 +1,19 @@
+/* All selector to add border-box */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Add background colour to the whole page */
 body {
     background-color: #d9dcd6;
 }
 
+/* Add padding to the header to add space from within the header */
+/* white colour for text */
+/* Different background colour for header */
+/* Accepted font-family consisting of Trebuchet MS then a series of fallback fonts */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +21,19 @@ header {
     color: #ffffff;
 }
 
+/* Added inline-block and increased front size */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Adding white colour to seo logo */
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Add padding and margin to the nav with float right to sit on the right */
+/* Font sizing and font family applied */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +42,30 @@ nav {
     font-size: 20px;
 }
 
+/* Removes bulletpoints from list style */
 nav ul {
     list-style-type: none;
 }
 
+/* list items inside the nav display inline-block to ensure they stack horizontally */
+/* Add margin left to each list item to ensure they don't stick together */
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* All anchors with the colour white and text-decoration none as browsers default to underline */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* 16px as a baseline for all paragraphs */
 p {
     font-size: 16px;
 }
 
+/* Defines the  */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,11 +75,14 @@ p {
     background-position: center;
 }
 
+/* utility class to float elements to the left  and 
+add margin-right to ensure content isn't sticking on the right */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Same as float-left but instead float to the right and margin on the left */
 .float-right {
     float: right;
     margin-left: 25px;
@@ -95,6 +114,7 @@ p {
     background-color: #2589bd;
 }
 
+/* all elements as a direct child to a .benefits element applies margin bottom and colour white */
 .benefits>* {
     margin-bottom: 32px;
     color: #ffffff;
@@ -111,19 +131,24 @@ aside>article>img {
     max-width: 150px;
 }
 
+/* Add max height to all img elements */
 img {
     max-height: 200px;
 }
 
+/* Add margin-bottom and font-size to all h2  */
 h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Set font-size for h4 */
 h4 {
     font-size: 20px;
 }
 
+/* Set padding, font-family and text-align to footer elements */
+/* clear property to clear any potential floats on both side (left and right) */
 footer {
     padding: 30px;
     clear: both;
